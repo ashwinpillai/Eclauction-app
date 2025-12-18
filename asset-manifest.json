@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Eclauction-app/static/css/main.aba3af5f.css",
+    "main.js": "/Eclauction-app/static/js/main.11773a35.js",
+    "index.html": "/Eclauction-app/index.html",
+    "main.aba3af5f.css.map": "/Eclauction-app/static/css/main.aba3af5f.css.map",
+    "main.11773a35.js.map": "/Eclauction-app/static/js/main.11773a35.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aba3af5f.css",
+    "static/js/main.11773a35.js"
+  ]
+}
