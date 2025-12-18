@@ -26,7 +26,7 @@ export const playerStats = {
   "Ashish Dubey": { batting: { runs: 15, avg: "3.75", sr: "93.75", balls: 16, highest: "9*", "50s": 0, "6s": 0 }, bowling: { wickets: 3, avg: "19.67", econ: "11.80", overs: "5.0" } },
   "Aniket Mukadam": { batting: { runs: 10, avg: "5.00", sr: "66.67", balls: 15, highest: "6", "50s": 0, "6s": 0 }, bowling: { wickets: 3, avg: "8.33", econ: "6.25", overs: "4.0" } },
   "Ajit Sharma": { batting: { runs: 0, avg: "0", sr: "0", balls: 0, highest: "-", "50s": 0, "6s": 0 }, bowling: { wickets: 2, avg: "9", econ: "9.00", overs: "2.0" } },
-  "Abhinav Mandal": { batting: { runs: 55, avg: "12.00", sr: "50.00", balls: 4, highest: "25", "50s": 0, "6s": 2 }, bowling: { wickets: 4, avg: "20.67", econ: "10.33", overs: "6.0" } },
+  "Abhinav Mandal": { batting: { runs: 55, avg: "12.00", sr: "150.00", balls: 30, highest: "30", "50s": 0, "6s": 2 }, bowling: { wickets: 4, avg: "20.67", econ: "8.50", overs: "6.0" } },
   "Melvin Yanu": { batting: { runs: 7, avg: "2.33", sr: "77.78", balls: 9, highest: "4", "50s": 0, "6s": 0 }, bowling: { wickets: 1, avg: "64", econ: "16.00", overs: "4.0" } },
   "Prasad Wagh": { batting: { runs: 1, avg: "0.50", sr: "50.00", balls: 2, highest: "1", "50s": 0, "6s": 0 }, bowling: { wickets: 1, avg: "52", econ: "13.00", overs: "4.0" } },
   "Abhishek Shukla": { batting: { runs: 6, avg: "3.00", sr: "66.67", balls: 9, highest: "6*", "50s": 0, "6s": 0 }, bowling: { wickets: 2, avg: "11.5", econ: "23.00", overs: "1.0" } },
