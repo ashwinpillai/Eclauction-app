@@ -1,0 +1,59 @@
+ECL SEASON 4 – AUCTION RULES (FOR TEAM OWNERS)
+==============================================
+
+1. TEAM BUDGET (PURSE)
+----------------------
+1.1 Every team starts with the **same purse** (team cap) – the exact amount is shown in the app.
+
+1.2 For each player:
+    - The **Base Price** is the minimum starting price.
+    - Your **final bid must be ≥ Base Price**.
+
+1.3 **Only the amount ABOVE Base Price is deducted** from your purse.
+    - Example: Base Price = ₹500, Final Bid = ₹1,500  
+      → Deduction from team purse = ₹1,500 − ₹500 = **₹1,000**.
+
+1.4 If a sale is undone by the organizers, the same deducted amount is **fully added back** to your purse.
+
+
+2. SQUAD SIZE & CATEGORY LIMITS
+-------------------------------
+2.1 **Maximum 10 players per team** in total.  
+    This includes:
+    - Captain  
+    - Vice-Captain  
+    - All players bought in the auction.
+
+2.2 **Maximum 2 players per category (SET) per team**, including Captain & Vice-Captain.
+    - If you already have **1** player from a category, you can buy only **1 more** from that category.
+    - If you already have **2** from a category (for example, Captain + 1 auction buy),  
+      you **cannot** buy any more players from that same category.
+
+2.3 The category **“ALLROUNDERS-P” is blocked** – teams cannot buy players from this category.
+
+
+3. UNSOLD PLAYERS
+-----------------
+3.1 Players not bought in their main SET can be marked **UNSOLD** and will come back in the **Final Unsold Round**.
+
+3.2 In the Final Unsold Round:
+    - UNSOLD players resurface again in order.
+    - If a team still does not buy them and they are marked UNSOLD again,  
+      they may come back later in the same round until the organizers decide to end the auction.
+
+
+4. WHAT OWNERS SHOULD REMEMBER
+------------------------------
+4.1 Watch both:
+    - Your **remaining purse**, and  
+    - Your **count per category** (max 2 including Captain/VC).
+
+4.2 Because only **extra over Base Price** is deducted, focus your strategy on  
+    how much **premium over base** you are comfortable paying for each player.
+
+4.3 Once you reach either:
+    - **10 total players**, or  
+    - **2 players in a specific category**,  
+    you will not be allowed to buy more players that break those limits.
+
+

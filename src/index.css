@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* 1. Base Gradient for deep color */
+  background: linear-gradient(135deg, #0f4c75 0%, #1e5e8e 100%); 
+  min-height: 100vh;
+  
+  /* 2. CORRECTED IMAGE PATH for Netlify */
+  /* Ensure Cricket.png is placed in your project's public folder (or public/images) */
+background-image: url('https://i.ibb.co/BHYV6y9K/Cricket.png');  
+  /* If you put it in a subfolder like /public/images/ */
+  /* background-image: url('/images/Cricket.png'); */
+  
+  background-size: cover; 
+  background-attachment: fixed; 
+  background-position: center; 
+  
+  /* 3. Blend Mode for Subtle, Dark Effect */
+  background-blend-mode: overlay; 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

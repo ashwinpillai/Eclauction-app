@@ -1,0 +1,353 @@
+.team-assignment-overlay {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  z-index: 1001;
+  animation: fadeIn 0.3s ease;
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.team-assignment-modal {
+  background: white;
+  border-radius: 20px;
+  padding: 24px 26px;
+  width: 100%;
+  max-width: 520px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  /* NEW BORDER COLOR */
+  border: 2px solid rgba(26, 188, 156, 0.2); 
+}
+
+.team-assignment-modal.compact {
+  padding: 0;
+  max-width: 520px;
+  border-radius: 0 24px 24px 0;
+  height: 100%;
+}
+
+.team-assignment-modal.compact > * {
+  padding: 24px 26px;
+}
+
+.team-assignment-modal.sold-confirmation {
+  text-align: center;
+  padding: 30px;
+  max-width: 400px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.team-assignment-modal h3 {
+  text-align: center;
+  color: #1abc9c; /* Teal */
+  font-size: 2rem;
+  margin-bottom: 14px;
+}
+
+.assignment-player-name {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.base-price-display {
+  text-align: center;
+  padding: 10px 16px;
+  background: rgba(26, 188, 156, 0.1);
+  border: 1px solid rgba(26, 188, 156, 0.3);
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.base-price-label-compact {
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.base-price-value-compact {
+  font-size: 1.25rem;
+  color: #16a085;
+  font-weight: 800;
+}
+
+.bid-input-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* --- REVISED BIDDING CONTROL STYLES --- */
+.bid-input-compact {
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 20px;
+  align-items: center; 
+}
+
+.bid-input-compact label {
+  font-weight: 600;
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 5px; 
+}
+
+.bid-control-group {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  margin-bottom: 10px; 
+}
+
+.bid-input {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 2px solid #ced4da;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 190px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.increment-btn {
+  padding: 12px 18px;
+  background: #f39c12; /* Orange Increment Button */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  min-width: 60px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.increment-btn:hover {
+  background: #e67e22;
+  transform: translateY(-1px);
+}
+
+.increment-btn:active {
+  background: #d35400;
+  transform: translateY(0);
+}
+
+.category-increment-info {
+  font-size: 0.9rem;
+  color: #555;
+  /* NEW INFO BACKGROUND */
+  background: #f0fdfa; 
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px dashed #1abc9c;
+}
+/* --- END REVISED BIDDING CONTROL STYLES --- */
+
+
+.bid-input:focus {
+  border-color: #1abc9c;
+  box-shadow: 0 0 0 3px rgba(26, 188, 156, 0.2);
+}
+
+
+.teams-grid-compact {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 14px;
+  margin-top: 4px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.team-card-compact {
+  /* NEW BUTTON GRADIENT: Teal */
+  background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(26, 188, 156, 0.3);
+}
+
+.team-card-compact:hover:not(.disabled) {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 12px rgba(26, 188, 156, 0.4);
+}
+
+
+.team-card:disabled,
+.team-card-compact.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  background: #ccc;
+}
+
+
+.team-name-compact {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.team-budget-compact {
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+
+.budget-warning-compact {
+  margin-top: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.sold-badge {
+  /* Green success */
+  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.4);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.sold-details {
+  margin: 20px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.sold-to strong,
+.sold-price strong {
+  color: #1abc9c; /* Teal Highlight */
+  font-size: 1.3rem;
+}
+
+.undo-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #e74c3c; /* Red */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.undo-button:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+}
+
+.confirm-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #1abc9c; /* Teal */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.confirm-button:hover {
+  background: #16a085;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 188, 156, 0.4);
+}
+
+/* --- NEW UNSOLD BUTTON STYLING --- */
+.unsold-button {
+  margin-top: auto;
+  padding: 12px 24px;
+  background: #95a5a6; /* Grey/silver color */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.unsold-button:hover {
+  background: #7f8c8d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+/* --- END NEW UNSOLD BUTTON STYLING --- */
+
+
+@media (max-width: 768px) {
+  .team-assignment-overlay {
+    width: 100%;
+  }
+
+  .team-assignment-modal {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .teams-grid,
+  .teams-grid-compact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bid-input {
+    width: 100%;
+  }
+}
