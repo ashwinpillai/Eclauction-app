@@ -1,0 +1,38 @@
+.App {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  padding: 20px;
+  /* Dark background shadow for contrast */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.app-header h1 {
+  /* New Title Style */
+  font-size: 3.5rem;
+  margin-bottom: 5px;
+  font-weight: 900;
+  /* Use a bright, contrasting color like Gold or Teal/Aqua */
+  color: #0ff1b5; /* Gold/Yellow for main title */
+  letter-spacing: 2px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.app-header p {
+  /* New Subtitle Style */
+  font-size: 1.4rem;
+  opacity: 1;
+  font-weight: 600;
+  color: #1abc9c; /* Teal/Aqua for contrast */
+  text-transform: uppercase;
+}
+
+.app-main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
