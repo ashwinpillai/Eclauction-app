@@ -224,18 +224,15 @@ function TeamAssignment({
         <div className="bid-input-compact">
           <label htmlFor="bid-amount">Current Bid (₹)</label>
           <div className="bid-control-group">
-            <input
-              id="bid-amount"
-              type="number"
-              min={player.basePrice || 0}
-              value={bidPrice}
-              onChange={(e) => {
-                let val = Number(e.target.value);
-                if (val < player.basePrice) val = player.basePrice;
-                setBidPrice(val);
-              }}
-              className="bid-input"
-            />
+          <input
+  id="bid-amount"
+  type="number"
+  value={bidPrice}
+  onChange={(e) => {
+    setBidPrice(Number(e.target.value));
+  }}
+  className="bid-input"
+/>
             <button
               className="increment-btn"
               onClick={handleIncrement}
