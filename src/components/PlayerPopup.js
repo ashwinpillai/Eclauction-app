@@ -21,15 +21,7 @@ function PlayerPopup({ player, show, subtitle }) {
 
   if (!player || !show) return null;
 
-  const roleColors = {
-    'Batsman': '#e74c3c',
-    'Bowler': '#3498db',
-    'All-Rounder': '#9b59b6',
-    'Wicket-Keeper': '#f39c12',
-    'Batsman/Wicket-Keeper': '#e67e22'
-  };
-
-  const roleColor = roleColors[player.role] || '#ffd166';
+ 
   const stats = getPlayerStats(player.name);
 
   return (

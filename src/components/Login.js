@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Login.css';
+import './login.css';
 
 function Login({ onLogin }) {
   const [username, setUsername] = useState('');
@@ -11,7 +11,7 @@ function Login({ onLogin }) {
     setError('');
 
     // Check credentials
-    if (username === 'chetan' && password === 'Chetan@261519') {
+    if (username === 'chetan' && password === 'chetan@261519') {
       // Store login state in localStorage
       localStorage.setItem('isAuthenticated', 'true');
       onLogin();
@@ -60,4 +60,3 @@ function Login({ onLogin }) {
 }
 
 export default Login;
-
