@@ -54,7 +54,7 @@ function PlayerPopup({ player, show, subtitle }) {
         {subtitle && (
           <div className="player-subtitle">{subtitle}</div>
         )}
-        <div className="player-role-display" style={{ color: roleColor }}>
+        <div className="player-role-display" >
           {player.role}
         </div>
         
