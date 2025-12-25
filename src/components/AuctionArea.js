@@ -40,7 +40,7 @@ function AuctionArea({
   lastAssigned
 }) {
   const categoryOrder = useMemo(
-    () => ['new-to-game', 'wk-bat-bowl', 'best-batters-bowlers', 'allrounders-1', 'allrounders'],
+    () => ['new-to-game', 'wk-bat-bowl','mystery', 'best-batters-bowlers', 'allrounders-1', 'allrounders'],
     []
   );
 
