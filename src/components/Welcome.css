@@ -1,0 +1,274 @@
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  padding: 20px;
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.welcome-content {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 60px 40px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Logo Section */
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ECL Logo Styling */
+.ecl-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ecl-logo-image {
+  max-width: 400px;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+/* Equinox Agents Logo Styling */
+.equinox-agents-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.equinox-text {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #4a90e2;
+  letter-spacing: 4px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.agents-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4a90e2;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Welcome Message */
+.welcome-message {
+  margin-bottom: 50px;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0ff1b5;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  letter-spacing: 2px;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Winners Section */
+.winners-section {
+  margin-bottom: 50px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.winners-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1abc9c;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.winners-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.winner-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 15px 30px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.winner-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.season-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  min-width: 120px;
+  text-align: left;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.team-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0ff1b5;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  flex: 1;
+  text-align: left;
+}
+
+/* Continue Button */
+.continue-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 18px 50px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.continue-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.6);
+}
+
+.continue-button:active {
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-content {
+    padding: 40px 30px;
+  }
+
+  .logo-section {
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .ecl-logo-image {
+    max-width: 300px;
+  }
+
+  .equinox-text {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  }
+
+  .agents-text {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .welcome-title {
+    font-size: 2rem;
+  }
+
+  .winners-title {
+    font-size: 1.5rem;
+  }
+
+  .winner-item {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .season-label,
+  .team-name {
+    text-align: center;
+  }
+
+  .continue-button {
+    padding: 16px 40px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-content {
+    padding: 30px 20px;
+  }
+
+  .logo-section {
+    gap: 30px;
+  }
+
+  .ecl-logo-image {
+    max-width: 250px;
+  }
+
+  .equinox-text {
+    font-size: 2rem;
+  }
+
+  .welcome-title {
+    font-size: 1.6rem;
+  }
+}
+

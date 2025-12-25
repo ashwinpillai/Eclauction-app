@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import './App.css';
 import Login from './components/Login';
+import Welcome from './components/Welcome';
 import AuctionArea from './components/AuctionArea';
 import FinalOutput from './components/FinalOutput';
 import { savePlayerToSheet, testGoogleSheets } from './utils/googleSheets';
@@ -19,6 +20,12 @@ function App() {
     return localStorage.getItem('isAuthenticated') === 'true';
   });
   
+  const [showWelcome, setShowWelcome] = useState(() => {
+    // Show welcome if authenticated on initial load and auction hasn't started
+    const isAuth = localStorage.getItem('isAuthenticated') === 'true';
+    return isAuth;
+  });
+  
   const [players, setPlayers] = useState([]);
   const [teams, setTeams] = useState([]);
   const [assignedPlayers, setAssignedPlayers] = useState({});
@@ -27,7 +34,7 @@ function App() {
   const [auctionStarted, setAuctionStarted] = useState(false);
   const [auctionComplete, setAuctionComplete] = useState(false);
   const [lastAssigned, setLastAssigned] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [loadError, setLoadError] = useState(null);
 
   const PLAYERS_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR8zX1pyfs_1Ec5UJlxJuK0mzyw7CyfL7JYm2VZsrdi559A81-YQ-IkMuh3DdJ0tcbWrfqBrYen4krP/pub?gid=0&single=true&output=csv';
@@ -50,6 +57,14 @@ function App() {
   const handleLogin = () => {
     setIsAuthenticated(true);
     localStorage.setItem('isAuthenticated', 'true');
+    // Show welcome page after login
+    setShowWelcome(true);
+  };
+
+  const handleWelcomeContinue = () => {
+    setShowWelcome(false);
+    // Start loading data when user continues from welcome page
+    setLoading(true);
   };
 
   const handleDataSetup = useCallback((playersData, teamsData) => {
@@ -128,6 +143,12 @@ function App() {
       setLoading(false);
       return;
     }
+    
+    if (showWelcome) {
+      // Don't load data while welcome page is showing
+      setLoading(false);
+      return;
+    }
 
     let isCancelled = false;
 
@@ -190,7 +211,7 @@ function App() {
 
     loadAll();
     return () => { isCancelled = true; };
-  }, [isAuthenticated, handleDataSetup]);
+  }, [isAuthenticated, showWelcome, handleDataSetup]);
 
   // --- 4. Handlers ---
   const handlePlayerAssigned = (playerId, teamId, bidPrice) => {
@@ -229,6 +250,11 @@ function App() {
 
   // --- 5. Render Logic ---
   if (!isAuthenticated) return <Login onLogin={handleLogin} />;
+
+  // Show welcome page if authenticated and welcome hasn't been dismissed
+  if (showWelcome) {
+    return <Welcome onContinue={handleWelcomeContinue} />;
+  }
 
   return (
     <div className="App">
