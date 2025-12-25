@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Eclauction-app/static/css/main.81b9e7a1.css",
-    "main.js": "/Eclauction-app/static/js/main.c99f7190.js",
+    "main.js": "/Eclauction-app/static/js/main.519b94e3.js",
     "index.html": "/Eclauction-app/index.html",
     "main.81b9e7a1.css.map": "/Eclauction-app/static/css/main.81b9e7a1.css.map",
-    "main.c99f7190.js.map": "/Eclauction-app/static/js/main.c99f7190.js.map"
+    "main.519b94e3.js.map": "/Eclauction-app/static/js/main.519b94e3.js.map"
   },
   "entrypoints": [
     "static/css/main.81b9e7a1.css",
-    "static/js/main.c99f7190.js"
+    "static/js/main.519b94e3.js"
   ]
 }
