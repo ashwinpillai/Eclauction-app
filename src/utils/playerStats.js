@@ -21,7 +21,7 @@ export const playerStats = {
   "Gaurav Tungare": { batting: { runs: 27, avg: "5.40", sr: "112.50", balls: 24, highest: "12", "50s": 0, "6s": 1 }, bowling: { wickets: 4, avg: "14.5", econ: "11.60", overs: "5.0" } },
   "Faizzie K": { batting: { runs: 24, avg: "6.00", sr: "133.33", balls: 18, highest: "15*", "50s": 0, "6s": 1 }, bowling: { wickets: 4, avg: "6", econ: "6.00", overs: "4.0" } },
   "Nikhil Poojary": { batting: { runs: 21, avg: "10.50", sr: "175.00", balls: 12, highest: "12", "50s": 0, "6s": 1 }, bowling: { wickets: 1, avg: "4", econ: "4.80", overs: "0.5" } },
-  "Mohit Sawant": { batting: { runs: 18, avg: "9.00", sr: "150.00", balls: 12, highest: "15", "50s": 0, "6s": 1 } },
+  "Suraj Sonawane": { batting: { runs: 18, avg: "9.00", sr: "150.00", balls: 12, highest: "15", "50s": 0, "6s": 1 } },
   "Sandeep Chaubey": { batting: { runs: 17, avg: "8.50", sr: "100.00", balls: 17, highest: "12", "50s": 0, "6s": 0 }, bowling: { wickets: 2, avg: "23", econ: "9.86", overs: "4.4" } },
   "Ashish Dubey": { batting: { runs: 15, avg: "3.75", sr: "93.75", balls: 16, highest: "9*", "50s": 0, "6s": 0 }, bowling: { wickets: 3, avg: "19.67", econ: "11.80", overs: "5.0" } },
   "Aniket Mukadam": { batting: { runs: 10, avg: "5.00", sr: "66.67", balls: 15, highest: "6", "50s": 0, "6s": 0 }, bowling: { wickets: 3, avg: "8.33", econ: "6.25", overs: "4.0" } },
